@@ -36,6 +36,11 @@ header {
   align-items: flex-start;
 }
 
+.main-hebergements p,
+h2 {
+  font-size: small;
+}
+
 .logo {
   width: 60px;
   height: 40px;
@@ -57,6 +62,9 @@ li {
   display: inline;
 }
 
+.fa-location-dot {
+  color: black;
+}
 .hebergement-link {
   margin-right: 60px;
 }
@@ -64,9 +72,6 @@ li {
 .hebergement-link:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
-}
-
-.activite-link {
 }
 
 .activite-link:hover {
@@ -79,6 +84,65 @@ li {
   font-size: 22px;
 }
 
+.form-search {
+  border-radius: 5px;
+  border: 0.5px solid #efefef;
+  width: 270px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.location {
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  width: 12%;
+  height: 100%;
+}
+
+.filters {
+  border: none;
+  width: 43%;
+  height: 92%;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  width: 40.4%;
+  height: 100%;
+  color: white;
+  background-color: #0065fc;
+}
+
+.box-filters {
+  display: flex;
+  width: auto;
+  height: 60px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-filters {
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  border-radius: 20px;
+  width: 115px;
+}
+
+.box-info {
+  display: flex;
+  align-items: center;
+}
+.icon-background {
+  color: white;
+}
+
+.fa-info {
+  color: #0065fc;
+}
 .card {
   background-color: white;
   border-radius: 20px;

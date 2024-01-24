@@ -30,22 +30,39 @@
 
         </header>
         <main>
-            <section>
+            <section class="main-hebergements">
                 <h1>Trouvez votre hébergemnts pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <form action="" method="get">
-                    <label for="filters">img</label>
-                    <input type="text" id="filters" placeholder="Marseille, France ">
-                    <input type="submit" value="Rechercher">
+                    <div class="form-search">
+                        <button type="submit" class="location"><i class="fa-solid fa-location-dot"></i></button>
+                        <label for="filters"></label>
+                        <input type="text" id="filters" class="filters" value="Marseille, France">
+                        <button type="submit" class="btn-search">Recherche</button>
+                    </div>
                 </form>
-                <div>
+                <div class="box-filters">
                     <h2>Filtres</h2>
-                    <input type="button" value="Écomomique">
-                    <input type="button" value="Familial">
-                    <input type="button" value="Romantique">
-                    <input type="button" value="Nos pépites">
+                    <button type="submit" class="btn-filters">
+                        <h2><i class="fa-solid fa-money-bill"></i> Économique</h2>
+                    </button>
+                    <button type="submit" class="btn-filters"></i>
+                        <h2><i class="fa-solid fa-person"></i> Familial</h2>
+                    </button>
+                    <button type="submit" class="btn-filters">
+                        <h2><i class="fa-solid fa-heart"></i> Romantique</h2>
+                    </button>
+                    <button type="submit" class="btn-filters">
+                        <h2><i class="fa-solid fa-fire"></i> Nos pépites</h2>
+                    </button>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="box-info"><span class="fa-stack fa-2xs">
+                        <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fa fa-info fa-stack-1x"></i>
+                    </span>
+                    <!-- mettre 2 icons l'un sur l'autre pour changer et le texte et le fond -->
+                    Plus de 500 logements sont disponibles dans
+                    cette ville</p>
             </section>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
