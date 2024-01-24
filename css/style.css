@@ -184,6 +184,10 @@ li {
   width: 65%;
 }
 
+.hebergements-cards {
+  display: flex;
+}
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
