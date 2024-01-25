@@ -188,10 +188,15 @@ li {
   padding: 30px;
   box-sizing: border-box;
 }
+/* .hebergements-and-populaires a {
+  display: flex;
+  width: 100%;
+} Permet a l'ancre et a la carte de faire la meme dimension */
 
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -203,8 +208,14 @@ li {
 
 .hebergements-cards {
   display: flex;
-  gap: 30px;
+  gap: 5px;
 }
+
+.hebergements-cards a {
+  display: flex;
+  width: 100%;
+}
+
 .hebergements-cards .card-hebergements {
   display: flex;
   flex-direction: column;
@@ -222,6 +233,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   box-sizing: border-box;
   /* Permet au contenu de ce dimensionner par rapport à l'élement parent */
 }
@@ -234,6 +246,13 @@ li {
   margin: 0;
 }
 
+.hebergements-more {
+  margin: 12px;
+}
+
+.hebergements-more h3 {
+  font-size: medium;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
