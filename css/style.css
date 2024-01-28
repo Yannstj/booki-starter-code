@@ -8,6 +8,11 @@
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
 }
+/* factorisé */
+
+/* .margin-top {
+  margin-top: 20px;
+} placé la classe directement dans le html  pour l'appliquer*/
 
 .fa-solid {
   color: var(--main-color);
@@ -16,6 +21,8 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -33,7 +40,6 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .main-hebergements p,
@@ -42,8 +48,14 @@ h2 {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   width: 60px;
-  height: 40px;
+  height: 50px;
+}
+
+.logo img {
+  width: auto;
 }
 
 a {
@@ -53,20 +65,26 @@ a {
 }
 
 ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 li {
-  display: inline;
+  display: flex;
+  border-top: 2px solid white;
+  align-items: center;
+}
+
+.hebergement-link {
+  height: 50px;
+  margin-right: 40px;
 }
 
 .fa-location-dot {
   color: black;
-}
-.hebergement-link {
-  margin-right: 60px;
 }
 
 .hebergement-link:hover {
@@ -132,10 +150,23 @@ li {
   width: 115px;
 }
 
-.box-info {
+/* .box-info {
+  display: flex;
+  align-items: center;
+} */
+
+.info {
   display: flex;
   align-items: center;
 }
+
+.info i {
+  padding: 6px 11px;
+  margin: 10px;
+  border: 1px #d9d9d9 solid;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
+
 .icon-background {
   color: white;
 }
@@ -203,13 +234,15 @@ li {
 
 .hebergements-cards {
   display: flex;
-  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hebergements-cards a {
   display: flex;
-  width: 100%;
+  width: 30%;
 }
+/* Corressponds à toute les cartes hebergements  */
 
 .hebergements-cards .card-hebergements {
   display: flex;
