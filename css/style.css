@@ -259,7 +259,7 @@ li {
   border-radius: 10px;
   width: 100%;
 }
-/* Correspond à une carte hebergements */
+/* (card-hebergements)Correspond à une carte hebergements */
 
 .hebergements-cards img {
   width: 100%;
@@ -340,10 +340,11 @@ li {
 }
 
 /****** Activités ***********/
-
-.activites {
+.activites-and-photos {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.activites {
 }
 
 .activites-title {
@@ -351,6 +352,30 @@ li {
 }
 
 .activites-cards {
+  display: flex;
+  justify-content: stretch;
+  gap: 10px;
+}
+/* toutes les cartes activités */
+
+.activites-card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+/* contenu dans chacune des cartes activités */
+.activites-cards a {
+  display: flex;
+  border: solid black 1px;
+  border-radius: 20px;
+}
+
+.activites-card img {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+.activites-card-txt {
   display: flex;
 }
 
