@@ -353,7 +353,7 @@ li {
 
 .activites-cards {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 /* toutes les cartes activités */
 
@@ -365,7 +365,7 @@ li {
 .activites-cards a {
   background-color: white;
   display: flex;
-  width: 80%;
+  width: 100%;
   /* border: solid black 1px; */
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -374,13 +374,28 @@ li {
 .activites-card img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-
   height: 500px;
 }
 
-.activites-card-txt {
+.activites-card-content {
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.activites-card-title h3 {
+}
+
+/* footer */
+
+footer {
+  background-color: #efefef;
+  display: flex;
+  width: 100%;
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
