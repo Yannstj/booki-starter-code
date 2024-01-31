@@ -390,19 +390,27 @@ header li {
 footer {
   display: flex;
   background-color: #efefef;
+  margin-top: 80px;
 }
 
 .footer-elements {
   display: flex;
   flex-wrap: wrap;
+  gap: 285px;
   width: 100%;
   border: solid 1px black;
+}
+
+.footer-title {
+  margin: 0;
+  padding: 0;
 }
 .footer-list {
   display: flex;
   flex-direction: column;
 }
 footer ul {
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
