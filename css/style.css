@@ -133,15 +133,9 @@ header li {
   width: auto;
   height: 60px;
   margin-top: 10px;
-  border: 1px solid black;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-}
-
-.box-filters {
-  display: flex;
-  border: 1px solid #d9d9d9;
   background-color: white;
 }
 
@@ -374,7 +368,7 @@ header li {
 .activites-card img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 500px;
+  height: 450px;
 }
 
 .activites-card-content {
@@ -396,14 +390,15 @@ footer {
 .footer-elements {
   display: flex;
   flex-wrap: wrap;
-  gap: 285px;
+  gap: 255px;
   width: 100%;
-  border: solid 1px black;
 }
 
 .footer-title {
-  margin: 0;
   padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
 }
 .footer-list {
   display: flex;
@@ -413,6 +408,12 @@ footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-weight: 100;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
