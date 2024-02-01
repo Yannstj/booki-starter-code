@@ -19,9 +19,10 @@
 }
 
 body {
+  max-width: 1440px;
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -139,6 +140,10 @@ header li {
   background-color: white;
 }
 
+.box-filters button:hover {
+  background-color: #deebff;
+}
+
 .btn-filters {
   border: 2px solid #d9d9d9;
   background-color: white;
@@ -161,8 +166,8 @@ header li {
 }
 
 .info i {
-  padding: 6px 11px;
-  margin: 10px;
+  padding: 4px 8px;
+  margin: 8px;
   border: 1px #d9d9d9 solid;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 }
@@ -172,7 +177,9 @@ header li {
 }
 
 .fa-info {
+  font-size: x-small;
   color: #0065fc;
+  padding-bottom: 1px;
 }
 .card {
   background-color: white;
@@ -418,6 +425,7 @@ footer li {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
