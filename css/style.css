@@ -144,6 +144,11 @@ header li {
   background-color: white;
 }
 
+.box-filters b {
+  display: block;
+  padding: 8px 6px 8px 6px;
+}
+
 .box-filters button:hover {
   background-color: #deebff;
 }
@@ -152,7 +157,6 @@ header li {
   border: 2px solid #d9d9d9;
   background-color: white;
   border-radius: 20px;
-  padding: 0px 12px 0px 12px;
 }
 
 .btn-filters i {
@@ -353,12 +357,14 @@ header li {
 .activites-and-photos {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .activites {
 }
 
 .activites-title {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .activites-cards {
@@ -382,7 +388,7 @@ header li {
 .activites-card img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 450px;
+  height: 420px;
 }
 
 .activites-card-content {
