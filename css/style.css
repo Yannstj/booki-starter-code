@@ -12,7 +12,8 @@
 
 /* .margin-top {
   margin-top: 20px;
-} placé la classe directement dans le html  pour l'appliquer*/
+} placé la classe directement dans le html  pour l'appliquer
+*/
 
 .fa-solid {
   color: var(--main-color);
@@ -574,11 +575,26 @@ footer li {
   .info {
     margin-top: 40px;
   }
+
+  /* hebergements and populaires */
   .hebergements-and-populaires {
     display: flex;
     flex-direction: column;
   }
 
+  .hebergements-and-populaires .populaires {
+    border-radius: 0px;
+  }
+  /* modifie seulement la section populaires */
+
+  .hebergements-and-populaires .hebergements {
+    background-color: white;
+    border-radius: 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  /* modifie seulement la section hebergements */
+  /* les 2 classes ci dessus override la partie .hebergements-and-populaires section" */
   .populaires {
     display: flex;
     flex-direction: column;
@@ -597,6 +613,7 @@ footer li {
     display: flex;
     flex-direction: column;
     order: 1;
+    background-color: #0065fc;
     /* ici order 1 permet à populaires de passer devant car order commence à 0 */
   }
   .hebergements-cards {
