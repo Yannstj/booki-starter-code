@@ -431,6 +431,14 @@ footer li {
 
 /****** Media queries ***********/
 
+/* Adaptation Desktop  */
+
+@media (max-width: 1133px) {
+  .footer-elements {
+    gap: 110px;
+  }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .box-filters {
@@ -454,6 +462,14 @@ footer li {
 
   .hebergements {
     width: 100%;
+  }
+
+  .hebergements-cards a {
+    height: 220px;
+  }
+
+  .card-hebergements {
+    margin: 8px;
   }
 
   .populaires {
@@ -487,7 +503,113 @@ footer li {
   }
 }
 
+/* Tablette < 884px */
+@media (max-width: 884px) {
+  .hebergements-cards a {
+    height: 230px;
+  }
+  .activites-card img {
+    height: 200px;
+  }
+  .footer-elements {
+    gap: 60px;
+  }
+}
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  body {
+    margin: 0;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    padding: 12px;
+    width: 60px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header li {
+  }
+
+  .hebergement-link {
+    border-bottom: #d9d9d9 2px solid;
+  }
+  .activite-link {
+    border-bottom: #d9d9d9 2px solid;
+  }
+  .hebergements-and-populaires {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .hebergements {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    /* ici order 1 permet à populaires de passer devant car order commence à 0 */
+  }
+  .hebergements-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hebergements-cards a {
+    width: 100%;
+  }
+
+  /* Activtes and photos */
+
+  .activites-and-photos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activites-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* footer */
+
+  footer {
+    width: 100%;
+  }
+
+  .footer-elements {
+    display: flex;
+    flex-direction: column;
+  }
 }
