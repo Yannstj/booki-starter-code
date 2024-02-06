@@ -125,6 +125,15 @@ header li {
   height: 92%;
 }
 
+.icon-search {
+  display: none;
+}
+
+.fa-magnifying-glass {
+  color: white;
+  background-color: #0065fc;
+}
+
 .btn-search {
   border: none;
   border-radius: 0px 5px 5px 0px;
@@ -558,7 +567,15 @@ footer li {
   .activite-link {
     border-bottom: #d9d9d9 2px solid;
   }
+  .icon-search {
+    display: inline-block;
+    height: 100%;
+    width: 12%;
+  }
 
+  .btn-search {
+    display: none;
+  }
   /* filters */
 
   .box-filters {
@@ -595,6 +612,7 @@ footer li {
   }
   /* modifie seulement la section hebergements */
   /* les 2 classes ci dessus override la partie .hebergements-and-populaires section" */
+
   .populaires {
     display: flex;
     flex-direction: column;
