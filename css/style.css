@@ -101,7 +101,7 @@ header li {
 }
 
 .form-search {
-  border-radius: 5px;
+  border-radius: 8px;
   border: 0.5px solid #efefef;
   width: 270px;
   height: 30px;
@@ -114,7 +114,7 @@ header li {
 
 .location {
   border: none;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 8px 0px 0px 8px;
   width: 12%;
   height: 100%;
 }
@@ -129,14 +129,9 @@ header li {
   display: none;
 }
 
-.fa-magnifying-glass {
-  color: white;
-  background-color: #0065fc;
-}
-
 .btn-search {
   border: none;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 8px 8px 0px;
   width: 40.4%;
   height: 100%;
   color: white;
@@ -527,7 +522,7 @@ footer li {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
   body {
     margin: 0;
     margin: 0;
@@ -567,10 +562,32 @@ footer li {
   .activite-link {
     border-bottom: #d9d9d9 2px solid;
   }
+
+  .form-search {
+    display: flex;
+    border-radius: 5px;
+    border: 0.5px solid #efefef;
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+  }
   .icon-search {
-    display: inline-block;
-    height: 100%;
-    width: 12%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .icon-search i {
+    padding: 8.2px;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 1.5px 1.5px 0px var(--filter-bg-color);
+  }
+
+  .fa-magnifying-glass {
+    color: white;
+    background-color: #0065fc;
   }
 
   .btn-search {
