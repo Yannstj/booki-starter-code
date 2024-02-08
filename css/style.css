@@ -289,7 +289,6 @@ header li {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  /* Permet au contenu de ce dimensionner par rapport à l'élement parent */
 }
 
 .card-hebergements .card-title {
@@ -364,8 +363,6 @@ header li {
   justify-content: space-between;
   margin-top: 40px;
 }
-.activites {
-}
 
 .activites-title {
   width: 100%;
@@ -393,7 +390,7 @@ header li {
 .activites-card img {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  height: 420px;
+  height: 410px;
 }
 
 .activites-card-content {
@@ -437,12 +434,17 @@ footer li {
   padding-left: 15px;
   font-weight: 100;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 
-/* Adaptation Desktop  */
-
+/* Adaptation Desktop cases */
+@media (min-width: 1024px) and (max-width: 1170px) {
+  .activites-card img {
+    height: 320px;
+  }
+}
 @media (max-width: 1133px) {
   .footer-elements {
     gap: 110px;
@@ -513,7 +515,7 @@ footer li {
   }
 }
 
-/* Tablette < 884px */
+/* Tablette < 884px cases */
 @media (max-width: 884px) {
   .hebergements-cards a {
     height: 235px;
@@ -525,7 +527,7 @@ footer li {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   body {
     margin: 0;
     margin: 0;
@@ -582,6 +584,8 @@ footer li {
     border-top: none;
     border-bottom: #0065fc 2px solid;
   }
+
+  /* end of header css */
 
   .main-hebergements {
     display: flex;
@@ -643,7 +647,6 @@ footer li {
 
   .box-filters {
     flex-wrap: wrap;
-    /* border: 2px solid; */
     width: 100%;
     height: auto;
     justify-content: center;
@@ -723,9 +726,6 @@ footer li {
     height: 238px;
   }
 
-  .card-hebergements {
-  }
-
   .card-hebergements img {
     height: 130px;
   }
@@ -739,8 +739,8 @@ footer li {
   .activites-and-photos {
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 9%;
+    padding-right: 9%;
   }
 
   .activites-cards {
