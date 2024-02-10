@@ -8,9 +8,8 @@
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
 }
-/* factorisé */
-
-/* .margin-top {
+/*  exemple de factorisé 
+.margin-top {
   margin-top: 20px;
 } placé la classe directement dans le html  pour l'appliquer
 */
@@ -38,6 +37,8 @@ img {
   padding: 0 50px;
   box-sizing: border-box;
 }
+
+/* header */
 
 header {
   display: flex;
@@ -81,10 +82,6 @@ header li {
   margin-right: 40px;
 }
 
-.fa-location-dot {
-  color: black;
-}
-
 .hebergement-link:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
@@ -94,6 +91,8 @@ header li {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
+
+/* form rechercher */
 
 .section-title {
   margin: 0;
@@ -120,7 +119,9 @@ header li {
   width: 12%;
   height: 100%;
 }
-
+.fa-location-dot {
+  color: black;
+}
 .filters {
   border: none;
   width: 43%;
@@ -142,6 +143,8 @@ header li {
 .btn-txt {
   font-weight: bold;
 }
+
+/* filters */
 
 .box-filters {
   display: flex;
@@ -194,6 +197,9 @@ header li {
   color: #0065fc;
   padding-bottom: 1px;
 }
+
+/* global cards */
+
 .card {
   background-color: white;
   border-radius: 20px;
@@ -439,7 +445,7 @@ footer li {
 
 /****** Media queries ***********/
 
-/* Adaptation Desktop cases */
+/* Adaptation Desktop specific cases */
 @media (min-width: 1024px) and (max-width: 1170px) {
   .activites-card img {
     height: 320px;
@@ -453,6 +459,10 @@ footer li {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .info {
+    display: flex;
+    margin-bottom: 20px;
+  }
   .box-filters {
     display: flex;
     flex-wrap: wrap;
@@ -463,14 +473,13 @@ footer li {
     width: 100%;
   }
 
-  .info {
-    display: flex;
-    margin-bottom: 20px;
-  }
+  /* hebergements-and-populaires */
 
   .hebergements-and-populaires {
     flex-direction: column;
   }
+
+  /* hebergements */
 
   .hebergements {
     width: 100%;
@@ -483,6 +492,8 @@ footer li {
   .card-hebergements {
     margin: 8px;
   }
+
+  /* populaires */
 
   .populaires {
     width: 100%;
@@ -507,15 +518,20 @@ footer li {
     font-size: 13px;
   }
 
+  /* activites  */
+
   .activites-card img {
     height: 220px;
   }
+
+  /* footer  */
+
   .footer-elements {
     gap: 130px;
   }
 }
 
-/* Tablette < 884px cases */
+/* Tablette < 884px specific cases */
 @media (max-width: 884px) {
   .hebergements-cards a {
     height: 235px;
@@ -539,6 +555,8 @@ footer li {
     flex-direction: column;
     padding: 0;
   }
+
+  /* header  */
 
   header {
     display: flex;
@@ -585,7 +603,7 @@ footer li {
     border-bottom: #0065fc 2px solid;
   }
 
-  /* end of header css */
+  /* main section  */
 
   .main-hebergements {
     display: flex;
@@ -598,6 +616,8 @@ footer li {
     padding-left: 3%;
   }
 
+  /* formulaire  */
+
   .form-search {
     display: flex;
     justify-content: center;
@@ -605,7 +625,6 @@ footer li {
     margin: 0;
     border-radius: 5px;
     border: none;
-
     height: 33px;
   }
   .location {
@@ -614,6 +633,7 @@ footer li {
     width: 38px;
   }
 
+  /* filters  */
   .filters {
     border: 0.5px solid #efefef;
     border-right: none;
@@ -646,8 +666,6 @@ footer li {
     color: white;
     background-color: #0065fc;
   }
-
-  /* filters */
 
   .box-filters {
     flex-wrap: wrap;
