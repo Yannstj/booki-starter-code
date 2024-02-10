@@ -252,7 +252,6 @@ header li {
 .hebergements {
   display: flex;
   width: 65%;
-  /* height: 100%; */
   flex-direction: column;
 }
 
@@ -268,20 +267,20 @@ header li {
   padding: 0;
 }
 
+/* Corressponds à toute les cartes hebergements  */
 .hebergements-cards a {
   display: flex;
   width: 33%;
   flex-grow: 1;
 }
-/* Corressponds à toute les cartes hebergements  */
 
+/* (card-hebergements)Correspond à une carte hebergements */
 .hebergements-cards .card-hebergements {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   width: 100%;
 }
-/* (card-hebergements)Correspond à une carte hebergements */
 
 .hebergements-cards img {
   width: 100%;
@@ -310,8 +309,8 @@ header li {
   width: 100%;
   height: 100%;
   align-items: center;
+  /*permet a la div Afficher plus de prendre tout l'espace et d'être centré */
 }
-/*permet a la div Afficher plus de prendre tout l'espace et d'être centré */
 
 .hebergements-more h3 {
   display: flex;
@@ -375,17 +374,18 @@ header li {
   margin-bottom: 50px;
 }
 
+/* toutes les cartes activités */
 .activites-cards {
   display: flex;
   gap: 30px;
 }
-/* toutes les cartes activités */
 
+/* contenu dans chacune des cartes activités */
 .activites-card {
   display: flex;
   flex-direction: column;
 }
-/* contenu dans chacune des cartes activités */
+
 .activites-cards a {
   background-color: white;
   width: 100%;
@@ -698,19 +698,19 @@ footer li {
     flex-direction: column;
   }
 
+  /* les 2 classes ci dessous override la partie .hebergements-and-populaires section" */
+  /* modifie seulement la section populaires */
   .hebergements-and-populaires .populaires {
     border-radius: 0px;
   }
-  /* modifie seulement la section populaires */
 
+  /* modifie seulement la section hebergements */
   .hebergements-and-populaires .hebergements {
     background-color: white;
     border-radius: 0;
     padding: 30px;
     box-sizing: border-box;
   }
-  /* modifie seulement la section hebergements */
-  /* les 2 classes ci dessus override la partie .hebergements-and-populaires section" */
 
   .populaires {
     display: flex;
@@ -730,8 +730,8 @@ footer li {
     display: flex;
     flex-direction: column;
     order: 1;
-    background-color: #0065fc;
     /* ici order 1 permet à populaires de passer devant car order commence à 0 */
+    background-color: #0065fc;
   }
 
   .hebergements-title {
